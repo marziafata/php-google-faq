@@ -54,7 +54,7 @@
                         ]
                 ]
 
-            ];
+            ];//invece di costruire io l'array dei paragrafi, posso fare explode dicendo di "spezzare" la stringa quando incontra un carattere speciale tipo | oppure ***. Dopo devo ugualmente ciclare l'array creato in questo modo (*)
 
             foreach ($faqs as $faq) {
                 ?>
@@ -65,7 +65,7 @@
                 </h1>
                 <?php
                     $array_risp = $faq['risposta'];//oppure scrivo direttamente $faq['risposta'] senza salvarlo dentro una variabile
-                    foreach ($array_risp as $paragrafo) {
+                    foreach ($array_risp as $paragrafo) {//(*)
                 ?>
                 <p>
                     <?php
