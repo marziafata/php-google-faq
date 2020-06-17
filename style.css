@@ -14,10 +14,16 @@ body {
 }
 
 
+
+
 h1 {
     margin: 30px 0;
 }
 
 p {
     margin-bottom: 20px;
+}
+
+.contenitore-risposta {
+    display: none;
 }

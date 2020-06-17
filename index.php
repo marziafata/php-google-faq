@@ -57,21 +57,28 @@ $faqs = [
     </head>
     <body>
         <div class="container">
-            <section class="domande">
+            <section id="faqs">
                 <?php
                     foreach ($faqs as $faq) { ?>
                         <div class="faq">
-                            <h1><?php echo $faq['domanda']; ?></h1>
-                            <?php
-                            $array_risp = $faq['risposta'];//oppure scrivo direttamente $faq['risposta'] senza salvarlo dentro una variabile
-                            foreach ($array_risp as $paragrafo) { ?>
-                                <p><?php echo $paragrafo; ?></p>
+                            <h1 class="titolo-domanda"><?php echo $faq['domanda']; ?>
+                            </h1>
+                            <div class="contenitore-risposta" style="display:none">
                                 <?php
-                            } ?>
+                                $array_risp = $faq['risposta'];//oppure scrivo direttamente $faq['risposta'] senza salvarlo dentro una variabile
+                                foreach ($array_risp as $paragrafo) { ?>
+                                    <p class="testo-risposta"><?php echo $paragrafo; ?></p>
+                                    <?php
+                                } ?>
+                            </div>
                         </div> <?php
                     }
                     ?>
             </section>
         </div>
+
+        <!-- javascript e jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="main.js" charset="utf-8"></script></body>
     </body>
 </html>
