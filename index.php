@@ -1,5 +1,5 @@
 <?php include 'faq.php'; ?>
-<!-- include funziona solo dal punto in cui esiste, la riga precedente non sa quali sono le faqs -->
+<!-- include funziona solo dal punto in cui esiste, la riga precedente non sa quali sono le faqs. il percorso parte dallo script dove c'è l'include-->
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
